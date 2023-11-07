@@ -32,7 +32,7 @@ powershell -ExecutionPolicy Bypass -File .\SubModule_Updater.ps1
 ```
 ## Funzionamento
 
-Una volta lanciato lo script verranno chieste 3 cose:
+Una volta lanciato lo script verrà chiesto di inserire 3 parametri:
 
 * Inserire l'***URL*** del submdoule da aggiornare 
 
