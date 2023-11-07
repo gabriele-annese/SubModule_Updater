@@ -9,7 +9,7 @@ Questo script ***aggiorna*** il submodule nei repo, ed esegue un ***push*** dell
 
 ## Download & Esecuzione
 
-Per scaricare il repo e eseguire lo script seguire le seguenti istruzioni:
+Per scaricare il repo e lanciare lo script bisogna aprire un ***cmd*** o una ***powershell*** e eseguire i seguenti comandi:
 
 ```bash
 
@@ -22,6 +22,7 @@ git clone https://github.com/gabriele-annese/SubModule_Updater.git
 cd .\SubModule_Updater
 
 ```
+Lo script non è ***firmato digitalmente***, per evitare errori di esecuzione eseguiro lo script in questo modo 
 
 ```bash
 
