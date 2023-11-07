@@ -13,6 +13,7 @@ $AsciiText = @"
 $Green = [char]27 + "[32m"  # Green text
 $Reset = [char]27 + "[0m"   # Reset text color
 $Red = [char]27 + "[31m"    # Red text
+$Yellow = [char]27 + "[33m"  # Yellow text
 
 Write-Host ${Red}$AsciiText${Reset}
 
@@ -29,6 +30,20 @@ do {
 
 $commitMessage = Read-Host "${Green}[-]Inserisci il messaggio del commit${Reset}"
 
+# Prendo la Folder del submodule tramite URL 
+function Get-LastPartOfPath {
+    param (
+        [string]$urlSubModule
+    )
+
+    $parts = $urlSubModule -split '/'
+    $lastPart = $parts[-1]
+    return $lastPart
+}
+$FolderSubModule = Get-LastPartOfPath($urlSubModule)
+Write-Host ${Red}$FolderSubModule${Reset}
+
+
 # Ciclo ogni repo
 foreach ($repo in $repositories) {
     # Mi posiziono nella path del repo
@@ -40,7 +55,7 @@ foreach ($repo in $repositories) {
 
     # Aggiorno submodule
     Write-Host "${Green}`n ************* Inizio aggiornamento Submodule ************* `n${Reset}"
-    cd Tools
+    cd $FolderSubModule
     git pull "$urlBranchRepo"
     Write-Host "${Green}`n ************* Fine aggiornamento Submodule ************* `n${Reset}"
 

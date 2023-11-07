@@ -22,7 +22,7 @@ git clone https://github.com/gabriele-annese/SubModule_Updater.git
 cd .\SubModule_Updater
 
 ```
-Lo script non è ***firmato digitalmente***, per evitare errori di esecuzione eseguiro lo script in questo modo 
+Lo script non è ***firmato digitalmente***, quindi per evitare errori di esecuzione bisogna lanciare lo script in questo modo 
 
 ```bash
 
