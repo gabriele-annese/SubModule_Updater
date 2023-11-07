@@ -41,7 +41,6 @@ function Get-LastPartOfPath {
     return $lastPart
 }
 $FolderSubModule = Get-LastPartOfPath($urlSubModule)
-Write-Host ${Red}$FolderSubModule${Reset}
 
 
 # Ciclo ogni repo
