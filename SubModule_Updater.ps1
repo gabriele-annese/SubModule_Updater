@@ -58,7 +58,7 @@ foreach ($repo in $repositories) {
     git pull "$urlBranchRepo"
     Write-Host "${Green}`n ************* Fine aggiornamento Submodule ************* `n${Reset}"
 
-    Pusho le modifiche
+    #Pusho le modifiche
     Write-Host "${Green}`n ************* Inizio Push Modifiche ************* `n${Reset}"
     cd ..
     git add .
