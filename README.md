@@ -5,6 +5,7 @@
 ## Descrizione
 
 Questo script serve per aggiornare lo stesso ***submodule*** su piu' repositories diversi.
+
 Questo script ***aggiorna*** il submodule nei repo, ed esegue un ***push*** delle modifiche direttamete sul repository.
 
 ## Download & Esecuzione
@@ -39,7 +40,7 @@ Una volta lanciato lo script verranno chieste 3 cose:
 
 * Inserire la lista delle ***Path*** locali dei repo su cui si vuole aggiornare il submodule.
 
-    Una volta inserte tutte le path lasciare vuoto l'ultimo inserimento e premere invio
+    Per andare avanti una volta inserte tutte le path lasciare vuoto l'ultimo inserimento e premere invio.
     ![Alt text](./img/Path.png)
 
 * inserire un ***Commento*** per il commit 
