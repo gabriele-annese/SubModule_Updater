@@ -32,12 +32,15 @@ powershell -ExecutionPolicy Bypass -File .\SubModule_Updater.ps1
 
 Una volta lanciato lo script verranno chieste 3 cose:
 
-* ***URL*** del submdoule da aggiornare 
+* Inserire l'***URL*** del submdoule da aggiornare 
+
     ![Alt text](./img/URLSubModule.png)
 
-* Lista delle ***Path*** locali dei repo su cui si vuole aggiornare il submodule
+* Inserire la lista delle ***Path*** locali dei repo su cui si vuole aggiornare il submodule.
+
     Una volta inserte tutte le path lasciare vuoto l'ultimo inserimento e premere invio
     ![Alt text](./img/Path.png)
 
-* Un ***Commento*** per il commit 
+* inserire un ***Commento*** per il commit 
+
     ![Alt text](./img/Commit.png)
