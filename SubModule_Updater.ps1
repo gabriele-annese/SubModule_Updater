@@ -49,7 +49,8 @@ foreach ($repo in $repositories) {
     Set-Location -Path $repo
 
     #Inizializzo submodule
-    Write-Host "${Green}`n ************* Inizializzo submodule del repo $repo ************* `n${Reset}"
+    Write-Host "${Yellow}`n ############# INIZIO $repo ############# `n${Reset}"
+    Write-Host "${Green}`n ************* Inizializzo submodule ************* `n${Reset}"
     git submodule update --init --recursive
 
     # Aggiorno submodule
@@ -65,7 +66,7 @@ foreach ($repo in $repositories) {
     git commit -m "$commitMessage"
     git push
     Write-Host "${Green}`n ************* Fine Push Modifiche ************* `n${Reset}"
-
-    Set-Location -Path $PSScriptRoot  # Ritorno alla Path dove è stato lanciato lo script
+    Write-Host "${Yellow}`n ############# FINE $repo ############# `n${Reset}"
+    Set-Location -Path $PSScriptRoot  # Ritorno alla Path dove e' stato lanciato lo script
 }
 
