@@ -43,6 +43,6 @@ Una volta lanciato lo script verrà chiesto di inserire 3 parametri:
     Per andare avanti una volta inserte tutte le path lasciare vuoto l'ultimo inserimento e premere invio.
     ![Alt text](./img/Path.png)
 
-* inserire un ***Commento*** per il commit 
+* Inserire un ***Commento*** per il commit 
 
     ![Alt text](./img/Commit.png)
